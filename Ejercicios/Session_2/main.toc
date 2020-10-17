@@ -1,0 +1,4 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Resumen}{2}{section.1}%
+\contentsline {section}{\numberline {2}Objetivo}{2}{section.2}%
+\contentsline {section}{\numberline {3}Marco teórico}{2}{section.3}%
