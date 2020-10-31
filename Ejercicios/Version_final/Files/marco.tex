@@ -4,14 +4,14 @@ Conforme el cilindro da vueltas a través de un ángulo theta, su centro de masa
 lineal $s=R\theta$ . Por lo tanto, la rapidez traslacional del centro de masa para movimiento de rodamiento
 puro está dado por:
 \begin{equation}
-    v_{cm}=\frac{ds}{dt}=R\frac{d\theta}{dt}=R\omega
+    v_{cm}=\frac{ds}{dt}=R\frac{d\theta}{dt}=R\omega,
     \label{eq:vcm}
 \end{equation}
 donde $\omega$ es la rapidez angular del cilindro. La ec. \{\ref{eq:vcm}\} se cumple siempre que un cilindro o esfera ruede
 sin deslizarse y es la \textit{condición para movimiento de rodamiento puro}. La magnitud de la aceleración
 lineal del centro de masa para movimiento de rodamiento puro es
 \begin{equation}
-    a_{cm}=\frac{dv_{cm}}{dt}=R\frac{d\omega}{dt} = R\alpha
+    a_{cm}=\frac{dv_{cm}}{dt}=R\frac{d\omega}{dt} = R\alpha,
     \label{eq:acm}
 \end{equation}
 donde $\alpha$ es la aceleración angular del cilindro. Permaneciendo en un marco de referencia en reposo respecto a CM, el cuerpo se observará en rotación pura alrededor de CM. En ese caso, cada punto del objeto
@@ -22,7 +22,60 @@ constante $v$ CM respecto a un marco de referencia externo. Resulta que en un ma
 la velocidad instantánea $v$ de cualquier punto del objeto bajo la condición de rodamiento puro viene dada
 por la suma de las velocidades del mismo punto bajo los casos de rotación pura y traslación pura.
 \begin{align*}
-    v_p=R\omega -v_{cm} &=v_{cm}-v_{cm}=0\\
-    v_{cm} &=0+v_{cm}=v_{cm}\\
-    v_{q}&= R\omega +v_{cm}=2v_{cm}
+    v_p=R\omega -v_{cm} &=v_{cm}-v_{cm}=0,\\
+    v_{cm} &=0+v_{cm}=v_{cm},\\
+    v_{q}&= R\omega +v_{cm}=2v_{cm}.
 \end{align*}
+Ya que el punto P tiene velocidad traslacional cero en cualquier instante dado, el objeto rueda en exac-
+tamente la misma forma que si la superficie se retirara y el objeto girara en torno a un eje que pasa a
+través de P. La energía cinética total de este objeto que se piensa que está girando se expresa como:
+\begin{equation}
+    K=\frac{1}{2} I_p \omega^2
+    \label{eq:k}
+\end{equation}
+donde I\textsubscript{P} es el momento de inercia en torno a un eje de rotación a través de P. Siendo así, este modelo
+aplica de forma exactamente igual al verdadero objeto bajo movimiento de rodamiento puro. Aplicando
+el teorema de ejes paralelos.
+\begin{equation}
+    I_P= I_{CM} + MR^2,
+    \label{eq:IP}
+\end{equation}
+sustituyendo la ecuación \ref{eq:k} en \ref{eq:IP} se obtiene que:
+\begin{equation*}
+    K= \frac{1}{2}I_{CM} \omega^2+\frac{1}{2}Mv_{CM}^2.
+\end{equation*}
+Se puede usar análisis de energía para tratar una clase de problemas concernientes al movimiento de
+rodamiento de un objeto sobre un plano inclinado rugoso. Para este caso, el movimiento de rodamiento
+acelerado sólo es posible si una fuerza de fricción está presente entre la esfera y el plano para producir
+un momento de torsión neto en torno al centro de masa. A pesar de la presencia de fricción, no se presenta
+pérdida de energía mecánica porque el punto P está en reposo en relación con la superficie en cualquier
+instante. Siendo $K = mgh$,
+\begin{equation*}
+    mgh=\frac{1}{2} I \omega^2 \qquad I=\frac{2}{5}mR^2+mb^2,
+\end{equation*}
+\begin{equation}
+    mgh= \frac{1}{2}\left(\frac{2}{5}mR^2+mb^2 \right)\omega^2,
+    \label{eq:mgh}
+\end{equation}
+\begin{align*}
+    \omega^2 &= \left(\frac{v}{b}\right)^2,\\
+    x=\left(\frac{v_0+v}{2}\right)t &\qquad v_0=0,\\
+    x=\frac{v}{2}t &\Leftrightarrow  v=\frac{2x}{t},
+\end{align*}
+\begin{equation}
+    \omega^2=\frac{4x^2}{b^2t^2}.
+    \label{eq:omega2}
+\end{equation}
+Sustituyendo la ecuación \ref{eq:omega2} y \ref{eq:mgh} se tiene que:
+\begin{align*}
+    mgh&= \frac{1}{2}\left(\frac{2}{5}mR^2+mb^2 \right)\frac{4x^2}{b^2t^2},\\
+    h & = \frac{4x^2}{2mg}\left(\frac{2mR^2}{5b^2}+\frac{mb^2}{b^2}\right),\\
+\end{align*}
+\begin{equation}
+    h=\frac{2x^2}{g}\left(\frac{2R^2}{5b^2}+1 \right)t^{-2},
+    \label{eq:h}
+\end{equation}
+donde
+\begin{equation*}
+    b^2=R^2-\left(\frac{a}{2}\right)^2
+\end{equation*}
